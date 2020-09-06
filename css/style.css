@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* -------------Preloader----------- */
+  #preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: rgba(4, 52, 253);
+}
+/*-------------Navigation Bar------------*/
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+}
+.navbar-brand img{
+    height: 40px;
+    padding-left: 30px;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    float: right;
+    text-align: left;
+}
+#nav-bar ul li a:hover{
+    color: #007bff!important;
+} 
+
+.navbar-toggler{
+    border: none!important;
+}
+.nav-link{
+    color: #555!important;
+    font-weight: 600;
+    font-size: 16px;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: #fff;
+    z-index: 100000;
+}
+.logo{
+    width: 150px;
+    height: 297px;   
+}
+.nav-item .active{
+    color: red !important;
+    border-bottom: 1px solid red !important;
+}
+/* -------------Video Background--------------*/
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+header .container{
+    position: relative;
+    z-index: 2;
+} 
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+}
+    header video {
+      display: none;
+    }
+}
+/* -----------Scroll to Top------------ */
+.overlay i{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background: red;
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease;
+    animation: animate 1.5s infinite;
+}
+.overlay i:hover{
+    transition: .5s;
+    background: blue;
+}
+@keyframes animate{
+    0%{
+       transform: translateY(0);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
+/*--------------------------About us------------------*/
+#about{
+    padding: 80px 0px 80px 170px;
+    background-color: lavender;
+
+}
+.text-center h2{
+    color: #2980b9;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+span{
+    color: #2980b9;
+}
+.row .deto{
+    text-align: center;
+    font-weight: thin;
+    font-size: 15px;  
+}
+@media screen and (max-width:966px){
+        #about{
+            padding: 80px 0px 40px 0px;
+           
+        }
+    }
+/*--------------------Cards-----------------*/
+.value{
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    text-align: center;
+    color: #333;
+    position: relative;
+    margin-top: 50px;
+   
+}
+.value2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.value::after{
+    content: '';
+    width: 59px;
+    height: 2px;
+    background-color: #54a0ff;
+    position: absolute;
+    bottom: -10px;
+    left: 49.5%;
+    transform: translateX(-50%);
+    border-radius: 1px;
+}
+h5{
+   color: #54a0ff;
+}
+.deto-logo{
+    margin: 200px 0 0 50px;
+}
+@media screen and (max-width:966px){
+    .deto-logo{
+           margin: 100px 0 0 -60px;
+       
+    }
+}
+/*--------------------Contact Us-----------------*/
+#promo{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("../images/Armoured-Patrol-Boat-1.jpg");
+    background-position: center;
+    color: #FFF;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 100px;
+    font-family: sans-serif;
+    font-size: 38px;
+    margin-top: 50px;
+}
+/* --------------------Thumbnail Carousel Slider------------------> */
+#text h1{
+    margin-bottom: 30px;
+    font-family: Arial, Verdana, sans-serif; 
+    font-weight: thin;
+    font-size: 30px;
+    color: #2980b9;
+}
+#text h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.carousel-control-prev-icon{
+    background-color: blue;
+}
+.carousel-control-next-icon{
+    background-color: blue;
+}
+/* -------------------Footer----------------*/
+#footer{
+    background: #00428a;
+    padding: 0 0 30px 0;
+    color: #eee;
+    font-size: 14px;
+}
+#footer .footer-top{
+    background: #004a99;
+    padding: 60px 0 30px 0;
+}
+#footer .footer-top .footer-info{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-info h3{
+    font-size: 34px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+#footer .footer-top .footer-info p{
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Montserrat", sans-serif;
+    color: #ecf5ff;
+}
+#footer .footer-top .social-links a{
+    font-size: 18px;
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+#footer .footer-top .social-links a:hover{
+    background: #0067d5;
+    color: #fff;
+}
+#footer .footer-top h4{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 10px;
+}
+#footer .footer-top .footer-links{
+    margin-bottom: 30px;  
+}
+#footer .footer-top .footer-links ul{
+    letter-spacing: normal;
+    padding: 0;
+    margin: 0;
+}
+#footer .footer-top .footer-links ul li{
+    padding: 8px 0;
+}
+#footer .footer-top .footer-links ul li:first-child{
+    padding-top: 0;
+}
+#footer .footer-top .footer-links ul a{
+    color: #ecf5ff;
+}
+#footer .footer-top .footer-links ul a:hover{
+    color: #74b5fc;
+}
+#footer .footer-top .footer-contact{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact p{
+    line-height: 26px;
+}
+#footer .footer-top .footer-newsletter{
+    margin-bottom: 30px;
+}
+#footer .footer-top .footer-newsletter input[type="email"]{
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+}
+#footer .footer-top .footer-newsletter input[type="submit"]{
+   background: #007bff;
+   border: 0%;
+   width: 35%;
+   padding: 6px 0;
+   text-align: center;
+   color: #fff;
+   transition: 0.3s;
+   cursor: pointer;
+}
+#footer .footer-top .footer-newsletter input[type="submit"]:hover{
+    background: #0062cc;
+}
+#footer .copyright{
+    text-align: center;
+    padding-top: 30px;
+}
+#footer .credits{
+    text-align: center;
+    font-size: 13px;
+    color: #f1f7ff;
+}
+footer.creadits a{
+    color: #bfddfe;
+}
+footer.creadits a:hover{
+    color: #f1f7ff;
+}
